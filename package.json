@@ -2,6 +2,15 @@
   "name": "create-npm-module",
   "version": "0.1.0",
   "description": "Create npm module skeleton.",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "",
+    "posttest": "standard",
+    "precommit": "npm test",
+    "preversion": "npm test",
+    "commitmsg": "validate-commit-msg",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
   "bin": {
     "create-npm-module": "./cli.js"
   },
@@ -14,5 +23,13 @@
     "meow": "^3.7.0",
     "yeoman-environment": "^2.0.5",
     "yeoman-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "semantic-release": "^8.2.0",
+    "standard": "^10.0.3",
+    "validate-commit-msg": "^2.14.0"
   }
 }
