@@ -1,0 +1,18 @@
+{
+  "name": "create-npm-module",
+  "version": "0.1.0",
+  "description": "Create npm module skeleton.",
+  "bin": {
+    "create-npm-module": "./cli.js"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "scaffold"
+  ],
+  "dependencies": {
+    "meow": "^3.7.0",
+    "yeoman-environment": "^2.0.5",
+    "yeoman-generator": "^1.0.0"
+  }
+}
