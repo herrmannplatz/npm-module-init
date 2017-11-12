@@ -24,6 +24,7 @@ This will generate the following project structure.
   |-- .travis.yml
   |-- index.js
   |-- index.spec.js
+  |-- LICENCE.md
   |-- package.json
   |-- README.md
 ```
@@ -43,7 +44,3 @@ npm t
 ## Publish a release
 
 Creating a release version and publishing it to the npm registry is handled by `semantic-release`. This is then triggered when travis build was successful. So ensure that travis is able to publish to npm.
-
-## Licence
-
-MIT
