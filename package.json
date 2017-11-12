@@ -2,6 +2,7 @@
   "name": "create-npm-module",
   "version": "0.0.0-semantic-release",
   "description": "Create npm module skeleton.",
+  "author": "René Herrmann <rene@herrmannplatz.de> (https://herrmannnplatz.de)",
   "scripts": {
     "commit": "git-cz",
     "test": "",
