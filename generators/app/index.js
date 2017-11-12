@@ -23,7 +23,9 @@ module.exports = class extends Generator {
       name: 'githubUrl',
       message: 'Your github url',
       default: ''
-    }])
+    }]).then((answers) => {
+      this.answers = answers
+    })
   }
 
   _gitInit () {
@@ -32,12 +34,12 @@ module.exports = class extends Generator {
 
   writing () {
     this.log('Copying template files.')
-    const { name, desc, githubUrl } = this.options
-
     this.fs.copyTpl(
       this.templatePath(),
       this.destinationPath(),
-      { name, desc, githubUrl }
+      this.answers,
+      undefined,
+      { globOptions: { dot: true } }
     )
   }
 
