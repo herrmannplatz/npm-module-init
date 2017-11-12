@@ -1,7 +1,7 @@
 {
-  "name": "<%= name %>",
+  "name": "foo",
   "version": "0.0.0-semantic-release",
-  "description": "<%= desc %>",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "<%= githubUrl %>"
+    "url": ""
   }
 }

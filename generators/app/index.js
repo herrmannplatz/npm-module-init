@@ -17,6 +17,11 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'desc',
       message: 'Your project description',
+      default: `module ${this.options.name}`
+    }, {
+      type: 'input',
+      name: 'githubUrl',
+      message: 'Your github url',
       default: ''
     }])
   }
@@ -26,12 +31,12 @@ module.exports = class extends Generator {
   }
 
   writing () {
-    const { name, desc } = this.options
+    const { name, desc, githubUrl } = this.options
 
     this.fs.copyTpl(
       this.templatePath(),
       this.destinationPath(),
-      { name, desc }
+      { name, desc, githubUrl }
     )
   }
 
