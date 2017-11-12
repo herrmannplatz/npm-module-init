@@ -3,10 +3,8 @@ const { exec } = require('child_process')
 const { promisify } = require('util')
 
 module.exports = class extends Generator {
-  constructor (args, opts) {
-    super(args, opts)
-
-    this.destinationRoot(opts.name)
+  initializing() {
+    this.destinationRoot(this.options.name)
   }
 
   prompting () {
@@ -23,31 +21,18 @@ module.exports = class extends Generator {
     }])
   }
 
-  _copyFile (file, options) {
-    this.fs.copyTpl(
-      this.templatePath(file),
-      this.destinationPath(file),
-      options
-    )
-  }
-
   _gitInit () {
     return promisify(exec)('git init', { cwd: this.destinationPath() })
   }
 
   writing () {
-    const files = [
-      '.editorconfig',
-      '.gitignore',
-      'package.json',
-      'README.md',
-      'index.js',
-      'index.spec.js'
-    ]
-
     const { name, desc } = this.options
 
-    files.forEach(file => this._copyFile(file, { name, desc }))
+    this.fs.copyTpl(
+      this.templatePath(),
+      this.destinationPath(),
+      { name, desc }
+    )
   }
 
   async installing () {
