@@ -1,6 +1,6 @@
 {
   "name": "<%= name %>",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "<%= desc %>",
   "main": "index.js",
   "scripts": {

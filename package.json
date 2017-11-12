@@ -1,6 +1,6 @@
 {
   "name": "create-npm-module",
-  "version": "0.1.0",
+  "version": "0.0.0-semantic-release",
   "description": "Create npm module skeleton.",
   "scripts": {
     "commit": "git-cz",

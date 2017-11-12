@@ -36,7 +36,7 @@ npm run commit
 
 Create release and publish to npm registry.
 ```
-npm run
+npm run semantic-release
 ```
 
 ## Licence

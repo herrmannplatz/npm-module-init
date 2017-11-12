@@ -3,7 +3,7 @@ const { exec } = require('child_process')
 const { promisify } = require('util')
 
 module.exports = class extends Generator {
-  initializing() {
+  initializing () {
     this.destinationRoot(this.options.name)
   }
 
