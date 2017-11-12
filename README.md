@@ -21,6 +21,7 @@ This will generate the following project structure.
 |-- my-npm-module
   |-- .editorconfig
   |-- .gitignore
+  |-- .travis.yml
   |-- index.js
   |-- index.spec.js
   |-- package.json
