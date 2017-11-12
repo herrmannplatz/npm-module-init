@@ -1,6 +1,6 @@
 # <%= name %>
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm version](https://badge.fury.io/js/<%= name %>.svg)](https://badge.fury.io/js/<%= name %>) [![Build Status](https://travis-ci.org/<%= githubUsername %>/<%= name %>.svg?branch=master)](https://travis-ci.org/<%= githubUsername %>/<%= name %>)
 
 <%= desc %>
 
