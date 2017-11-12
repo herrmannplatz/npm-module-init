@@ -31,6 +31,7 @@ module.exports = class extends Generator {
   }
 
   writing () {
+    this.log('Copying template files.')
     const { name, desc, githubUrl } = this.options
 
     this.fs.copyTpl(
@@ -41,7 +42,9 @@ module.exports = class extends Generator {
   }
 
   async installing () {
+    this.log('Setting up git repository.')
     await this._gitInit()
+    this.log('Installing dependencies.')
     this.npmInstall()
   }
 }
