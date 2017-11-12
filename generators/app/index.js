@@ -11,18 +11,18 @@ module.exports = class extends Generator {
     return this.prompt([{
       type: 'input',
       name: 'name',
-      message: 'Your project name',
+      message: 'Your module name',
       default: this.options.name
     }, {
       type: 'input',
       name: 'desc',
-      message: 'Your project description',
+      message: 'Your module description',
       default: `module ${this.options.name}`
     }, {
       type: 'input',
       name: 'githubUrl',
       message: 'Your github url',
-      default: ''
+      default: `https://github.com/[USERNAME]/${this.options.name}.git`
     }]).then((answers) => {
       this.answers = answers
     })
