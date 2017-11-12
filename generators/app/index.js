@@ -1,6 +1,5 @@
 const Generator = require(`yeoman-generator`)
-const { exec } = require('child_process')
-const { promisify } = require('util')
+const { execSync } = require('child_process')
 
 module.exports = class extends Generator {
   initializing () {
@@ -28,8 +27,14 @@ module.exports = class extends Generator {
     })
   }
 
-  _gitInit () {
-    return promisify(exec)('git init', { cwd: this.destinationPath() })
+  configuring () {
+    this.log('Setting up git repository.')
+    execSync('git init', { cwd: this.destinationPath() })
+
+    if (this.answers.githubUrl) {
+      this.log('Setting up git remote.')
+      execSync(`git remote add origin ${this.answers.githubUrl}`, { cwd: this.destinationPath() })
+    }
   }
 
   writing () {
@@ -44,8 +49,6 @@ module.exports = class extends Generator {
   }
 
   async installing () {
-    this.log('Setting up git repository.')
-    await this._gitInit()
     this.log('Installing dependencies.')
     this.npmInstall()
   }
