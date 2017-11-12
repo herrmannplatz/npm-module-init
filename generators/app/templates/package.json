@@ -8,7 +8,6 @@
     "test": "jest --coverage",
     "posttest": "standard",
     "precommit": "npm test",
-    "preversion": "npm test",
     "commitmsg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
