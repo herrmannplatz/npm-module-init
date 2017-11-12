@@ -1,6 +1,6 @@
 # npm-module-init
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm version](https://badge.fury.io/js/npm-module-init.svg)](https://badge.fury.io/js/npm-module-init) [![Build Status](https://travis-ci.org/herrmannplatz/npm-module-init.svg?branch=master)](https://travis-ci.org/herrmannplatz/npm-module-init) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Opinionated npm module scaffolding using jest, standard, commitizen and semantic-release.
 
