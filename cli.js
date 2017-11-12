@@ -16,6 +16,4 @@ const env = yeoman.createEnv()
 
 env.register(require.resolve('./generators/app'), 'npm-module-init:app')
 
-env.run('npm-module-init:app', { name }, () => {
-  console.log(`Created npm module ${name}`)
-})
+env.run('npm-module-init:app', { name }, () => {})

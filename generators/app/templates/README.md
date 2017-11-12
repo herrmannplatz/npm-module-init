@@ -20,7 +20,3 @@ Describe general usage.
 ```javascript
 // add examples
 ```
-
-## Licence
-
-MIT
