@@ -22,6 +22,10 @@ module.exports = class extends Generator {
       name: 'githubUrl',
       message: 'Your github url',
       default: `https://github.com/[USERNAME]/${this.options.name}.git`
+    }, {
+      type: 'confirm',
+      name: 'npmInstall',
+      message: 'Install dependencies'
     }]).then((answers) => {
       this.answers = answers
     })
@@ -48,8 +52,10 @@ module.exports = class extends Generator {
     )
   }
 
-  async installing () {
-    this.log('Installing dependencies.')
-    this.npmInstall()
+  installing () {
+    if (this.answers.npmInstall) {
+      this.log('Installing dependencies.')
+      this.npmInstall()
+    }
   }
 }
