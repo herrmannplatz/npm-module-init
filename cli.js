@@ -4,18 +4,18 @@ const yeoman = require('yeoman-environment')
 
 const cli = meow(`
   Usage
-  $ create-npm-module <name>
+  $ npm-module-init <name>
 
   Examples
-  $ create-npm-module my-npm-module
+  $ npm-module-init my-npm-module
 `)
 
 const [ name ] = cli.input
 
 const env = yeoman.createEnv()
 
-env.register(require.resolve('./generators/app'), 'create-npm-module:app')
+env.register(require.resolve('./generators/app'), 'npm-module-init:app')
 
-env.run('create-npm-module:app', { name }, () => {
+env.run('npm-module-init:app', { name }, () => {
   console.log(`Created npm module ${name}`)
 })

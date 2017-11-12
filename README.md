@@ -1,4 +1,4 @@
-# create-npm-module
+# npm-module-init
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -7,10 +7,10 @@ Opinionated npm module scaffolding using Jest, Standard and Commitizen.
 ## Getting started
 
 ```
-$ npm install create-npm-module -g
-$ create-npm-module my-npm-module
+$ npm install npm-module-init -g
+$ npm-module-init my-npm-module
 // or
-$ npx create-npm-module my-npm-module
+$ npx npm-module-init my-npm-module
 ```
 
 ## Project Structure

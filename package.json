@@ -1,5 +1,5 @@
 {
-  "name": "create-npm-module",
+  "name": "npm-module-init",
   "version": "0.0.0-semantic-release",
   "description": "Create npm module skeleton.",
   "author": "René Herrmann <rene@herrmannplatz.de> (https://herrmannnplatz.de)",
@@ -13,7 +13,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "bin": {
-    "create-npm-module": "./cli.js"
+    "npm-module-init": "./cli.js"
   },
   "keywords": [
     "npm",
@@ -35,6 +35,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/herrmannplatz/create-npm-module"
+    "url": "https://github.com/herrmannplatz/npm-module-init.git"
   }
 }
