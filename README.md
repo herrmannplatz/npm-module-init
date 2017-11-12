@@ -34,11 +34,6 @@ Commit your changes.
 npm run commit
 ```
 
-Create release and publish to npm registry.
-```
-npm run semantic-release
-```
-
 ## Licence
 
 MIT
