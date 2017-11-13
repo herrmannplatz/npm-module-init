@@ -7,10 +7,14 @@ Opinionated npm module scaffolding using jest, standard, commitizen and semantic
 ## Getting started
 
 ```
+
+// use as a global dependency
 $ npm install npm-module-init -g
 $ npm-module-init my-npm-module
-// or
+
+// or use without installing
 $ npx npm-module-init my-npm-module
+
 ```
 
 ## Project Structure
