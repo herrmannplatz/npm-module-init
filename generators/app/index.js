@@ -33,9 +33,9 @@ module.exports = class extends Generator {
       message: 'Your github username',
       default: async () => {
         try {
-          return await this.user.github.username();
+          return await this.user.github.username()
         } catch (error) {
-          return null;
+          return null
         }
       }
     }, {
