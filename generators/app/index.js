@@ -57,7 +57,7 @@ module.exports = class extends Generator {
 
     if (this.answers.githubUrl) {
       try {
-        this.log('🔧 Setting up git remote.')
+        this.log(`🔧 Setting up git remote. (git remote add origin ${this.answers.githubUrl})`)
         execSync(`git remote add origin ${this.answers.githubUrl}`, { cwd: this.destinationPath() })
       } catch (error) {
         this.log(`❗️ Failed to set git remote. ${error.message}`)
