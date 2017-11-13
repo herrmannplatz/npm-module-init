@@ -31,7 +31,13 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'githubUsername',
       message: 'Your github username',
-      default: () => this.user.github.username()
+      default: async () => {
+        try {
+          return await this.user.github.username();
+        } catch (error) {
+          return null;
+        }
+      }
     }, {
       type: 'confirm',
       name: 'npmInstall',
