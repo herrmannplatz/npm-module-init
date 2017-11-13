@@ -46,7 +46,7 @@ module.exports = class extends Generator {
       this.answers = {
         ...answers,
         year: new Date().getFullYear(),
-        githubUrl: `https://github.com/${answers.githubUsername}/${answers.name}.git`
+        githubUrl: `git@github.com/${answers.githubUsername}/${answers.name}.git`
       }
     })
   }
