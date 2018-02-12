@@ -14,6 +14,10 @@
   "bin": {
     "npm-module-init": "./cli.js"
   },
+  "files": [
+    "generators",
+    "cli.js"
+  ],
   "keywords": [
     "npm",
     "module",
