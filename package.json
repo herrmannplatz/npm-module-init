@@ -5,11 +5,8 @@
   "author": "René Herrmann <rene@herrmannplatz.de> (https://herrmannnplatz.de)",
   "scripts": {
     "commit": "git-cz",
-    "test": "",
-    "posttest": "standard",
-    "precommit": "npm test",
-    "commitmsg": "validate-commit-msg",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "standard",
+    "precommit": "npm test"
   },
   "bin": {
     "npm-module-init": "./cli.js"
@@ -24,17 +21,16 @@
     "scaffold"
   ],
   "dependencies": {
-    "meow": "^3.7.0",
-    "yeoman-environment": "^2.0.5",
-    "yeoman-generator": "^1.0.0"
+    "meow": "^5.0.0",
+    "yeoman-environment": "^2.3.1",
+    "yeoman-generator": "^3.1.1"
   },
   "devDependencies": {
-    "commitizen": "^2.9.6",
+    "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.14.3",
-    "semantic-release": "^8.2.0",
-    "standard": "^10.0.3",
-    "validate-commit-msg": "^2.14.0"
+    "semantic-release": "^15.9.9",
+    "standard": "^11.0.1"
   },
   "repository": {
     "type": "git",
