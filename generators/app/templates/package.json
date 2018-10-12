@@ -12,14 +12,12 @@
   "keywords": [],
   "author": "<%= author %> <<%= email %>>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "semantic-release": "^15.9.9",
-    "standard": "^11.0.1"
+    "husky": "^1.1.2",
+    "semantic-release": "^15.9.17",
+    "standard": "^12.0.1"
   },
   "repository": {
     "type": "git",
