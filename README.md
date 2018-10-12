@@ -27,7 +27,7 @@ This will generate the following project structure.
   |-- .gitignore
   |-- .travis.yml
   |-- index.js
-  |-- index.spec.js
+  |-- index.test.js
   |-- LICENCE.md
   |-- package.json
   |-- README.md
